@@ -1,0 +1,53 @@
+header {
+    text-align: center;
+    background-image: linear-gradient(
+        blue 0%,
+        rgb(64, 0, 182) 100%
+    );
+    color: white;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: solid 1px black;
+    margin-bottom: 1rem;
+}
+h1 {
+    font-weight: 900;
+}
+h2 {
+    font-weight: 900;
+}
+
+.cityInfo {
+    border: solid 1px black;
+    margin-right: 2rem;
+}
+.forcast {
+    margin-right: 2rem;
+}
+form {
+    box-sizing: border-box;
+    flex-shrink: 1;
+    width: 100%;
+    border-bottom: solid 1px black;
+}
+input {
+    width: 100%;
+    padding: .5rem;
+    border-radius: 5px;
+}
+button {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.history {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.history p{
+    background-color: rgb(192, 192, 192);
+    padding: .5rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 900;
+}
