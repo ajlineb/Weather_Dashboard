@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(240, 239, 239);
+}
+
 header {
     text-align: center;
     background-image: linear-gradient(
@@ -15,15 +19,21 @@ h1 {
 }
 h2 {
     font-weight: 900;
+    display: inline-block;
+    height: 1rem;
+}
+h3 {
+    font-weight: 900;
 }
 
 .cityInfo {
     border: solid 1px black;
     margin-right: 2rem;
 }
-.forcast {
+ .forcast {
     margin-right: 2rem;
-}
+ }
+
 form {
     box-sizing: border-box;
     flex-shrink: 1;
@@ -50,4 +60,31 @@ button {
     border-radius: 5px;
     text-align: center;
     font-weight: 900;
+}
+.forcast img {
+    height: 4rem;
+    display: inline-block;
+    background-color: rgb(163, 200, 255);
+    border-radius: 4rem;
+}
+.forcast p {
+    margin-top: 1rem;
+}
+#day-1, #day-2, #day-3, #day-4, #day-5 {
+    background-color: rgb(36, 36, 114);
+    border: solid 2px black;
+    border-radius: 1rem;
+    color:white;
+    margin: 1rem;
+}
+#icon {
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    background-color: rgb(163, 200, 255);
+    border-radius: 2rem;
+}
+
+#weatherInfo {
+    visibility: hidden;
 }
