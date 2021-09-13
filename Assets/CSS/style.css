@@ -50,17 +50,23 @@ button {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-.history {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-image: linear-gradient(
+        rgb(64, 0, 182)  0%,
+        blue 100%
+    );
+    padding: 1rem;
+    width: 100%;
 }
-.history p{
-    background-color: rgb(192, 192, 192);
-    padding: .5rem;
-    border-radius: 5px;
+.credits {
     text-align: center;
-    font-weight: 900;
+    color:white;
 }
+
 .forcast img {
     height: 4rem;
     display: inline-block;
@@ -69,6 +75,22 @@ button {
 }
 .forcast p {
     margin-top: 1rem;
+}
+#history {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#history button{
+    border-radius: 8px;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+#history li{
+    background-color: rgb(192, 192, 192);
+    padding: .5rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 900;
 }
 #day-1, #day-2, #day-3, #day-4, #day-5 {
     background-color: rgb(36, 36, 114);
@@ -87,4 +109,9 @@ button {
 
 #weatherInfo {
     visibility: hidden;
+}
+#heart {
+    color: rgb(255, 106, 230);
+    font-weight: 900;
+    font-size: 1.5rem;
 }
