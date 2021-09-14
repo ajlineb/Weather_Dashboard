@@ -49,7 +49,7 @@ var formSubmitHandler = function (event) {
 }
 
 var getCityInfo = function (city) {
-    var apiURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=b2624c3ce937d0aba4611a51057002d0";
+    var apiURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=b2624c3ce937d0aba4611a51057002d0";
     
     fetch(apiURL)
     .then(function(response){
@@ -71,7 +71,7 @@ var getCityInfo = function (city) {
 };
 
 var displayCityInfo = function(data, city) {
-    var api5DayCast = "http://api.openweathermap.org/data/2.5/onecall?lat=" + data.coord.lat + "&lon=" + data.coord.lon + "&units=imperial&appid=b2624c3ce937d0aba4611a51057002d0"
+    var api5DayCast = "https://api.openweathermap.org/data/2.5/onecall?lat=" + data.coord.lat + "&lon=" + data.coord.lon + "&units=imperial&appid=b2624c3ce937d0aba4611a51057002d0"
     fetch(api5DayCast)
     .then(function(response){
         response.json()
