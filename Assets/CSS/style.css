@@ -1,5 +1,7 @@
 body {
+    position: relative;
     background-color: rgb(240, 239, 239);
+    min-height: 100vh;
 }
 
 header {
@@ -52,14 +54,16 @@ button {
 }
 footer {
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
+    height: 3.2rem;
+    bottom:0;
     background-image: linear-gradient(
         rgb(64, 0, 182)  0%,
         blue 100%
     );
     width: 100%;
+}
+footer h3 {
+    margin-bottom: 0;
 }
 .credits {
     text-align: center;
@@ -79,7 +83,7 @@ footer {
     display: inline-block;
 }
 #uvColor {
-    color:white;
+    color:rgb(109, 109, 109);
     border-radius: 2px;
 }
 #history {
