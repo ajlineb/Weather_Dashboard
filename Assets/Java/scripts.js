@@ -11,6 +11,7 @@ var temp = document.getElementById("temp");
 var windEl = document.getElementById("wind");
 var humidEl = document.getElementById("humidity");
 var uvEl = document.getElementById("uv");
+var uvColorEl = document.getElementById("uvColor");
 
 var day1El = document.getElementById("day-1");
 var day2El = document.getElementById("day-2");
@@ -86,6 +87,22 @@ var displayCityInfo = function(data, city) {
             windEl.innerText = data.current.wind_speed + " mph, " + " Degrees: " + data.current.wind_deg +"\u00B0";
             humidEl.innerText = data.current.humidity + "%";
             uvEl.innerText = data.current.uvi;
+            uvnumber = parseInt(data.current.uvi);
+            if(uvnumber<2){
+                uvColorEl.style.backgroundColor = "green";
+            };
+            if(uvnumber>2 && uvnumber <= 5) {
+                uvColorEl.style.backgroundColor = "yellow";
+            };
+            if(uvnumber>5 && uvnumber <= 7){
+                uvColorEl.style.backgroundColor = "orange";
+            };
+            if(uvnumber>7 && uvnumber <= 10) {
+                uvColorEl.style.backgroundColor = "red";
+            };
+            if(uvnumber>10) {
+                uvColorEl.style.backgroundColor = "purple";
+            };
             for(i=0;i<5.;i++){
                 if(i===0){
                     for(j=0;j<5;j++){
@@ -321,6 +338,22 @@ var displayHistory = function(data, city) {
     windEl.innerText = data.current.wind_speed + " mph, " + " Degrees: " + data.current.wind_deg +"\u00B0";
     humidEl.innerText = data.current.humidity + "%";
     uvEl.innerText = data.current.uvi;
+    uvnumber = parseInt(data.current.uvi);
+    if(uvnumber<2){
+        uvColorEl.style.backgroundColor = "green";
+    };
+    if(uvnumber>2 && uvnumber <= 5) {
+        uvColorEl.style.backgroundColor = "yellow";
+    };
+    if(uvnumber>5 && uvnumber <= 7){
+        uvColorEl.style.backgroundColor = "orange";
+    };
+    if(uvnumber>7 && uvnumber <= 10) {
+        uvColorEl.style.backgroundColor = "red";
+    };
+    if(uvnumber>10) {
+        uvColorEl.style.backgroundColor = "purple";
+    };
     for(i=0;i<5.;i++){
         if(i===0){
             for(j=0;j<5;j++){

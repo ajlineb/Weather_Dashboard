@@ -75,6 +75,13 @@ footer {
 .forcast p {
     margin-top: 1rem;
 }
+.col p {
+    display: inline-block;
+}
+#uvColor {
+    color:white;
+    border-radius: 2px;
+}
 #history {
     margin-top: 1rem;
     margin-bottom: 1rem;
